@@ -1,0 +1,106 @@
+{
+    "squadName": "  فريق العيون التطوعي ",
+    "homeTown": "مدينة",
+    "formed": 2016,
+    "active": true,
+    "members": [
+          {
+            "id":"001",
+            "firstName":" سعد",
+            "middleName" : " حمد",
+            "lastName":"العيد",
+            "governmentId":"1054444445",
+            "email":"uds@jdf.com",
+            "whatsApp":"56565656565",
+          "image":"https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3870&q=80",
+            "dateOfBirth":[{
+              "day":"12",
+              "month":"12",
+              "year":"1978"
+            }],
+            "nationality":"Saudi",
+            "committee":"board",
+            "position":"head of team",
+            "hoursOfService":"60",
+            "dateOfJoining":[{
+              "day":"1",
+              "month":"1",
+              "year":"2016"
+            }],
+            "programs": [
+                {"name":"water",
+                "hours":"5",
+                "date":[{
+                  "day":"25",
+                  "month":"10",
+                  "year":"2021 "
+                }]}
+               
+            ]
+          },
+          {
+            "id":"002",
+            "firstName":"حمد",
+            "middleName":"سعد",
+            "lastName":"العيد",
+            "governmentId":"1054444445",
+            "email":"uds@jdf.com",
+            "whatsApp":"56565656565",
+            "dateOfBirth":[{
+              "day":"12",
+              "month":"12",
+              "year":"1978"
+            }],
+            "nationality":"Saudi",
+            "Committee":"IT",
+            "position":"head of team",
+            "hoursOfService":"60",
+            "dateOfJoining":[{
+              "day":"1",
+              "month":"1",
+              "year":"2016"
+            }],
+            "programs": [
+                {"name":" سقيا ال ",
+                "hours":"5",
+                "date":[{
+                  "day":"25",
+                  "month":"10",
+                  "year":"2021 "
+                }]}
+            ]
+          },
+          {
+            "id":"003",
+            "firstName":"حمد",
+            "lastName":"القرناس",
+            "governmentId":"1054444445",
+            "email":"uds@jdf.com",
+            "whatsApp":"56565656565",
+            "dateOfBirth":[{
+              "day":"12",
+              "month":"12",
+              "year":"1978"
+            }],
+            "nationality":"Saudi",
+            "Committee":"board",
+            "position":"head of team",
+            "hoursOfService":"60",
+            "dateOfJoining":[{
+              "day":"1",
+              "month":"1",
+              "year":"2016"
+            }],
+            "programs": [
+                {"name":" سقيا الماء ",
+                "hours":"5",
+                "date":[{
+                  "day":"25",
+                  "month":"10",
+                  "year":"2021 "
+                }]}
+            ]
+          }
+        ]
+      }
+ 
