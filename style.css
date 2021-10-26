@@ -11,12 +11,12 @@ a {
 
 }
 
-.container {
+body {
   position: relative;
   margin: 100px auto;
-  border: 1px solid black;
-  width: 23.4375rem;
-  height: 600px;
+
+  width: 375px;
+  height: 800px;
   border-radius: 12px;
 }
 
@@ -30,23 +30,33 @@ a.visited {
 .volunteer-card {
   position: absolute;
   height: 100%;
+  width: 100%;
   font-family: 'Cairo', sans-serif;
   display: flex;
   flex-flow: column wrap;
   justify-items: center;
   align-content: center;
-  width: 100%;
   border-bottom-right-radius: .75rem;
   border-bottom-left-radius: .75rem;
   text-align: center;
+  transition: 500ms;
+
+
 }
 
-.volunteer-card.active {
-  display: flex;
+.volunteer-card.active,
+.view-profile.active,
+  {
+  visibility: visible;
+  opacity: 1;
 }
 
-.volunteer-card.disabled {
-  display: none;
+.volunteer-card.disabled,
+.view-profile.disabled,
+.volunteer-certificate {
+
+  visibility: hidden;
+  opacity: 0;
 }
 
 
@@ -111,12 +121,12 @@ a.visited {
   align-content: center;
   border-bottom-right-radius: .75rem;
   border-bottom-left-radius: .75rem;
-  text-align: center;
+  text-align: right;
 
 }
 
 .volunteer-profile.disabled {
-  display: none;
+  visibility: hidden;
 }
 
 .programs {
@@ -135,18 +145,10 @@ a.visited {
   flex-flow: row wrap;
   justify-content: right;
   align-content: flex-start;
-
   width: 100%;
   height: 100%;
   font-family: 'Cairo', sans-serif;
-
-
   border-radius: .75rem;
-
-}
-
-.volunteer-certificate.active {
-  display: flex;
 }
 
 .volunteer-certificate.disabled {
@@ -165,32 +167,26 @@ a.visited {
   border-top-right-radius: .75rem;
   font-size: 2em;
   color: white;
-
-
-
-
-
 }
 
 .volunteer-certificate .certificates {
-  height: 80%;
+  height: 50%;
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
-  align-content: center;
-  justify-content: center;
-
+  align-items: center;
+  justify-content: flex-start;
+ align-content: space-around;
+ width: 100%;
+ margin: 10px auto;
 }
 
 .volunteer-certificate .certificate {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: flex-start;
-  padding: 1.125rem;
-
+ 
+  padding: 4px;
 }
+
+
 
 .volunteer-certificate svg g {
   fill: darkcyan;
@@ -199,4 +195,14 @@ a.visited {
 
 .volunteer-certificate h1 {
   font-size: 1em;
+}
+
+.volunteer-certificate.active {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-content: flex-start;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
 }

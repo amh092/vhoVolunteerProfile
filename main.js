@@ -52,3 +52,58 @@ console.log(programers)
 }
 
 // get the committee and list 
+
+
+// clicking function 
+
+const volunteerCard = document.querySelector(".volunteer-card ");
+const volunteerCardViewProfile = document.querySelector(".volunteer-card .view-profile ");
+const volunteerProfile = document.querySelector(".volunteer-profile");
+const volunteerProfileTitle = document.querySelector(".volunteer-profile .title");
+const volunteerCertificate = document.querySelector(".volunteer-certificate");
+const programs = document.querySelector(".programs");
+const certificateTitle = document.querySelector(".volunteer-certificate .title");
+
+
+// volunteerCard to profile onclick on view profile 
+
+volunteerCardViewProfile.addEventListener("click", function (){
+
+volunteerCard.classList.remove("active");
+volunteerCard.classList.add("disabled");
+volunteerProfile.classList.remove("disabled");
+volunteerProfile.classList.remove("active");
+
+})
+
+// profile card to volunteer card 
+
+volunteerProfileTitle.addEventListener("click",function (){
+  volunteerCard.classList.add("active");
+  volunteerCard.classList.remove("disabled");
+  volunteerProfile.classList.add("disabled");
+  volunteerProfile.classList.remove("active");
+
+})
+
+
+// profile card to certificate 
+
+programs.addEventListener("click", function(){
+
+  volunteerProfile.classList.remove("active");
+  volunteerProfile.classList.add("disabled");
+  volunteerCertificate.classList.add("active");
+  volunteerCertificate.classList.remove("disabled");
+
+})
+
+
+// certificate to profile card
+
+certificateTitle.addEventListener("click",function(){
+  volunteerCertificate.classList.remove("active");
+  volunteerCertificate.classList.add("disabled");
+  volunteerProfile.classList.add("active");
+  volunteerProfile.classList.remove("disabled");
+})
