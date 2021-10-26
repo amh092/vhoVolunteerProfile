@@ -17,7 +17,7 @@ a {
 
 body {
   position: relative;
- 
+ margin: 0 auto;
   display: flex;
   max-width: 23.4375rem;
   min-height: 50rem;
