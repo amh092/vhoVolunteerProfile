@@ -3,9 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
 
 /* || general styles */
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 a {
 
   font-size: 2em;
@@ -17,14 +20,17 @@ a {
 
 body {
   position: relative;
- margin: 0 auto;
+  margin: 25% auto;
   display: flex;
-  max-width: 25.875rem;
-  min-height: 40rem;
+  max-width: 13rem;
+  height: 600px;
   border-radius: 12px;
   display: flex;
   flex-flow: column wrap;
+  align-content: center;
+  justify-items: center;
 }
+
 
 a.visited {
   color: black;
@@ -51,8 +57,7 @@ a.visited {
 }
 
 .volunteer-card.active,
-.view-profile.active
-  {
+.view-profile.active {
   visibility: visible;
   opacity: 1;
 }
@@ -60,7 +65,7 @@ a.visited {
 .volunteer-card.disabled,
 .view-profile.disabled,
 .volunteer-certificate {
-
+  position: absolute;
   visibility: hidden;
   opacity: 0;
 }
@@ -130,17 +135,21 @@ a.visited {
   text-align: right;
 
 }
+.volunteer-profile .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 128, 79, 0.76);
+  height: 20%;
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+  font-size: 1em;
+  color: white;
+}
 
 .volunteer-profile.disabled {
   visibility: hidden;
-}
-
-.programs {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
 }
 
 /* volunteer certificate */
@@ -157,41 +166,67 @@ a.visited {
   border-radius: .75rem;
 }
 
+.volunteer-certificate.active {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-content: flex-start;
+  width: 100%;
+  height: 100%;
+  font-family: 'Cairo', sans-serif;
+  border-radius: .75rem;
+}
+
 .volunteer-certificate.disabled {
   display: none;
 }
+.volunteer-certificate .title {
 
-.volunteer-certificate .title,
-.volunteer-profile .title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: rgba(0, 128, 79, 0.76);
-  height: 20%;
-  border-top-left-radius: .75rem;
-  border-top-right-radius: .75rem;
-  font-size: 2em;
-  color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 128, 79, 0.76);
+    height: 20%;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    font-size: 1em;
+    color: white;
 }
 
+
 .volunteer-certificate .certificates {
-  height: 80%;
+  max-height: 80%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
- align-content: space-around;
- width: 100%;
- margin: 10px auto;
 }
 
+.certificate {
+  font-size: .3125rem;
+  display: flex;
+  flex-flow: column wrap;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .volunteer-certificate .certificate {
- 
+
   padding: .25rem;
 }
 
+.volunteer-certificate svg {
+  height: 20px;
+  width: 20px;
+}
 
 
 .volunteer-certificate svg g {
@@ -199,8 +234,8 @@ a.visited {
 }
 
 
-.volunteer-certificate h1 {
-  font-size: 1em;
+.volunteer-certificate .certificates > h1 {
+  font-size: .3em;
 }
 
 .volunteer-certificate.active {
@@ -212,4 +247,3 @@ a.visited {
   opacity: 1;
   height: 100%;
 }
-
