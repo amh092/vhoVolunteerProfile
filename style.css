@@ -20,10 +20,10 @@ a {
 
 body {
   position: relative;
-  margin: 25% auto;
+  margin: 5% auto;
   display: flex;
-  max-width: 13rem;
-  height: 600px;
+  max-width: 15rem;
+  height: 37.5rem;
   border-radius: 12px;
   display: flex;
   flex-flow: column wrap;
