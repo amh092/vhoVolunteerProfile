@@ -2,7 +2,7 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
 
-const vImage = document.querySelector(".volunteer-image img");
+// const vImage = document.querySelector(".volunteer-image img");
 const vName  = document.querySelector(".volunteer-name")
 
 const vHours = document.querySelector(".volunteer-card .hours");

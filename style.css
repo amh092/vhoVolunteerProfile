@@ -22,13 +22,15 @@ body {
   position: relative;
   margin: 5% auto;
   display: flex;
-  max-width: 15rem;
+  max-width: 18rem;
   height: 37.5rem;
   border-radius: 12px;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
   justify-items: center;
+  box-shadow: 1px 1px 10px 1px gray;
+  
 }
 
 
@@ -48,13 +50,17 @@ a.visited {
   flex-flow: column wrap;
   justify-items: center;
   align-content: center;
-  border-bottom-right-radius: .75rem;
-  border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
   text-align: center;
   transition: 500ms;
-
-
+  background: rgba(236, 233, 231, 0.685);
+  justify-content: space-between;
 }
+
+
 
 .volunteer-card.active,
 .view-profile.active {
@@ -133,6 +139,9 @@ a.visited {
   border-bottom-right-radius: .75rem;
   border-bottom-left-radius: .75rem;
   text-align: right;
+  background: rgba(236, 233, 231, 0.685);
+  
+  
 
 }
 .volunteer-profile .title {
@@ -141,15 +150,22 @@ a.visited {
   align-items: center;
   width: 100%;
   background: rgba(0, 128, 79, 0.76);
-  height: 20%;
+  height: 10%;
   border-top-left-radius: .75rem;
   border-top-right-radius: .75rem;
   font-size: 1em;
   color: white;
+  
 }
 
 .volunteer-profile.disabled {
   visibility: hidden;
+}
+
+.volunteer-info {
+  height: 90%;
+  padding: .525rem;
+  background: rgba(236, 233, 231, 0.685);
 }
 
 /* volunteer certificate */
@@ -188,7 +204,7 @@ a.visited {
     align-items: center;
     width: 100%;
     background: rgba(0, 128, 79, 0.76);
-    height: 20%;
+    height: 10%;
     border-top-left-radius: .75rem;
     border-top-right-radius: .75rem;
     font-size: 1em;
@@ -197,13 +213,14 @@ a.visited {
 
 
 .volunteer-certificate .certificates {
-  max-height: 80%;
+  max-height: 90%;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
   justify-content: center;
   align-items: center;
+  background: rgba(236, 233, 231, 0.685);
 }
 
 .certificate {
