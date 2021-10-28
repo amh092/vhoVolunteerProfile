@@ -61,7 +61,7 @@ const volunteerCardViewProfile = document.querySelector(".volunteer-card .view-p
 const volunteerProfile = document.querySelector(".volunteer-profile");
 const volunteerProfileTitle = document.querySelector(".volunteer-profile .title");
 const volunteerCertificate = document.querySelector(".volunteer-certificate");
-const programs = document.querySelector(".programs");
+const programs = document.querySelector(".to-programs");
 const certificateTitle = document.querySelector(".volunteer-certificate .title");
 
 
